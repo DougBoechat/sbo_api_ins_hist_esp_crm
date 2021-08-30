@@ -1,1 +1,4 @@
-# sbo_api_ins_hist_esp_crm
+ - Projeto com externalização dos properties
+ - Testes com H2
+ - compilação em WAR
+ - Preparado para servidor de aplicação Weblogic

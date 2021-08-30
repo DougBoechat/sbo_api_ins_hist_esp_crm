@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=Oracle
+    username: sa
+    password:
+    platform: h2
+    driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+      generate-ddl: false
+
+ocorrencia:
+  id:
+    situacao: Atendido
+  tipo:
+    depara: 123/456,111/123
+    situacaoespecial: 123,456
+  motivo:
+    depara: 5678/9876,3333/4444
+    situacaoespecial: 9876,3333
+  perfil:
+    origem: 1234
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+  port: 8090
+
+server:
+  servlet:
+    context-path: /sbo-api-ins-hist-esp-crm
+  port: 8090
+

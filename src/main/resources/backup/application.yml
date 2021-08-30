@@ -1,0 +1,45 @@
+spring:
+  profiles: default
+  datasource: 
+    jndi-name: jdbc/dcmsCRMRedeCred
+    # username: ADMPROD
+    # password: ad0dpvit2ad1600d#V
+    # url: jdbc:oracle:thin://@172.16.250.2:1721/DCMSDSV
+    driver:
+      class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    show-sql: false
+    properties: 
+      hibernate: 
+        format_sql: false
+        dialect: org.hibernate.dialect.Oracle10gDialect
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+
+weblogic:
+  transaction: 
+    allowOverrideSetRollbackReason: true
+
+ocorrencia:
+  id:
+    situacao: Atendido
+  tipo:
+    depara: 123/456,111/123
+    situacaoespecial: 123,456
+  motivo:
+    depara: 5678/9876,3333/4444
+    situacaoespecial: 9876,3333
+  perfil:
+    origem: 67
+    
+management:
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+      
+server:
+  servlet:
+    context-path: /sbo-api-ins-hist-esp-crm

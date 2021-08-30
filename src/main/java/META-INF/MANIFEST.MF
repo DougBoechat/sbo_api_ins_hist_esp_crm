@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: br.com.odontoprev.sbo_api_ins_hist_esp_crm.IntegradorApplication
+
